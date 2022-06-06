@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница из шаблонизатора</title>
+</head>
+<body>
+    <h1>Press the button!</h1>
+    {% for bt in bt %}
+    <form action="" method="GET">
+        <input type="submit" name="button" value={{ bt|e }}>
+    </form>
+    {% endfor %}
+</body>
+</html>
